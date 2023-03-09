@@ -1,13 +1,15 @@
 # Image-segmentation-API
 
 ## Overview
-In this project I trained an image segmentation model with tensor flow to detect features from a picture for automated vehicle. The model was then deployed on Heroku using Flask API. The pipeline was designed with Azure ML.
+In this project I trained an image segmentation model with tensor flow to detect features from a picture for automated vehicle. The model was then deployed on Heroku using Flask API. The model was trained using Google Colab.
 
 ## Data
 The famous dataset [Cityscape](https://www.cityscapes-dataset.com/dataset-overview/) was used for this project.
 
 ## Design and training
 Two designs were tested : U-net developped in 2015 for biomedical images ([article](https://heartbeat.comet.ml/deep-learning-for-image-segmentation-u-net-architecture-ff17f6e4c1cf)) and Deeplab from Google ([paperswithcode](https://paperswithcode.com/method/deeplab#:~:text=DeepLab%20is%20a%20semantic%20segmentation,we%20obtain%20the%20final%20predictions.)).
+
+Metrics : accuracy and dice-coeficient.
 
 ## Data Augmentation
 I used the Augmentor package for for Data Augmentation. The following features were applied with different magnitudes:

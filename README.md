@@ -12,12 +12,12 @@ Two designs were tested : U-net developped in 2015 for biomedical images ([artic
 Metrics : accuracy and dice-coeficient.
 
 ## Data Augmentation
-I used the Augmentor package for for Data Augmentation. The following features were applied with different magnitudes:
+I used the Augmentor package for Data Augmentation. The following features were applied with different magnitudes:
 * Roatation
 * Random zoom
 * Perspective skewing left, right, top, bottom and corner. (transform the image so that it appears that you are looking at it from a different angle)
 * Elastic distortion (random distortions while maintaining the image's aspect ratio)  
-[Augmentator](https://augmentor.readthedocs.io/en/stable/)
+Documentation : [Augmentator](https://augmentor.readthedocs.io/en/stable/)
 
 ## Hyper parameters 
 Baseline was established using :
@@ -28,7 +28,7 @@ Batch size = 32
 I studied the impact of data augmentation, different batch size and learning rate. Due to limited computation capacity the test were limited to only a few values.
 
 I used TensorBoard to monitor training.  
-[TensorBoard](https://www.tensorflow.org/tensorboard?hl=fr)
+Documentation : [TensorBoard](https://www.tensorflow.org/tensorboard?hl=fr)
 
 ## Deployment
 Using [Flask](https://flask.palletsprojects.com/en/2.2.x/) to build the API and [Heroku](https://www.heroku.com) (when it was still free) for deployment.
